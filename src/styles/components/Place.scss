@@ -1,0 +1,34 @@
+$primary-color: #7e8388; // Light blue
+$secondary-color: #437c70; // Dark blue
+$text-color: #2c3e50; // Text color
+$icon-color: #e74c3c; // Icon color
+
+.Place {
+  display: flex;
+  margin-right: 100 px;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: $text-color;
+  padding: 5px 10px;
+  background-color: lighten($primary-color, 40%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .bi-geo-alt-fill {
+    color: $icon-color;
+    margin-right: 8px;
+    font-size: 18px;
+  }
+
+  b {
+    font-weight: bold;
+    color: $secondary-color;
+  }
+}

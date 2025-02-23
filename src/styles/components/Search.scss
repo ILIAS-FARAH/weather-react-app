@@ -1,0 +1,54 @@
+@use '../variables/variables' as *;
+
+.search-container {
+  display: flex;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50px;
+  padding: 0 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .search-icon,
+  .search-input input {
+    height: 40px;
+  }
+
+  .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    padding-right: 1rem;
+  }
+
+  .search-input input {
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+}
+
+.search-results {
+  border-radius: 0.5rem;
+  background-color: var(--header-bg-color);
+  position: absolute;
+  z-index: 1;
+  top: 3.5rem; /* Lower the position */
+  width: 50%;
+  max-height: 50vh;
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .results-container {
+    .result {
+      padding: 0.75rem; /* Adjust padding */
+      font-size: 0.9rem; /* Lower the font size */
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--border-color);
+      }
+    }
+  }
+}

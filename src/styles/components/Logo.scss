@@ -1,0 +1,17 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; // Adjusted size
+    height: 50px; // Adjusted size
+    border-radius: 20px; // Adjusted for a smoother look
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .logo-gif {
+    width: 50px; // Adjust the width of the GIF
+    height: auto;
+    border-radius: 8px;
+  }
+  
